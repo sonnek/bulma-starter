@@ -1,0 +1,14 @@
+{
+	"name": "bulmatypic",
+	"homepage": "https://sonneksoller.com/",
+	"version": "1.0.0",
+	"author": "Rachelle Soller <rachelle@sonneksoller.com>",
+	"description": "House Bulma starter theme for MNPdev.",
+	"repository": "https://github.com/sonnek/bulmatypic.git",
+	"license": "GPL-2.0",
+	"main": "Gulpfile.js",
+	"devDependencies": {
+		"gulp": "^3.9.1",
+		"gulp-wp-toolkit": "^2"
+	}
+}
