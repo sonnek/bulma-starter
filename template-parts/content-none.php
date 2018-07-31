@@ -34,14 +34,14 @@
 		elseif ( is_search() ) :
 			?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'bulmatypic' ); ?></p>
+			<p><?php esc_html_e( 'We couldn&rsquo;t find what you were looking for. It might be around here somewhere though. Maybe try again with different keywords.', 'bulmatypic' ); ?></p>
 			<?php
 			get_search_form();
 
 		else :
 			?>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'bulmatypic' ); ?></p>
+			<p><?php esc_html_e( 'We couldn&rsquo;t find what you were looking for. It might be around here somewhere though. Maybe searching can help.', 'bulmatypic' ); ?></p>
 			<?php
 			get_search_form();
 
