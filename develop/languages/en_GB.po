@@ -1,10 +1,8 @@
-# Copyright (C) 2017 Automattic
+# Copyright (C) 2018 Rachelle Sonnek Soller
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2016-12-23 16:00+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,13 +12,13 @@ msgstr ""
 "X-Generator: grunt-wp-i18n 0.5.4\n"
 
 #: 404.php:17
-msgid "Oops! That page can&rsquo;t be found."
+msgid "Well that&rsquo;s embarrassing. We couldn&rsquo;t find that page."
 msgstr ""
 
 #: 404.php:21
 msgid ""
-"It looks like nothing was found at this location. Maybe try one of the "
-"links below or a search?"
+"We couldn&rsquo;t find what you were looking for. It might be around here somewhere though. "
+"You can try a search or exploring the links below."
 msgstr ""
 
 #: 404.php:30
@@ -116,14 +114,14 @@ msgstr ""
 
 #: template-parts/content-none.php:38
 msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
+"We couldn&rsquo;t find what you were looking for. It might be around here somewhere though. "
+"Maybe try again with different keywords."
 msgstr ""
 
 #: template-parts/content-none.php:44
 msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
+"We couldn&rsquo;t find what you were looking for. It might be around here somewhere though. "
+"Maybe searching can help."
 msgstr ""
 
 #: template-parts/content-page.php:22 template-parts/content.php:45
@@ -139,16 +137,13 @@ msgstr ""
 msgid "_s"
 msgstr ""
 
-#. Theme URI of the plugin/theme
-msgid "https://underscores.me/"
+#. Theme URI
+msgid "https://github.com/sonnek/bulmatypic"
 msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if "
-"you like. I'm a theme meant for hacking so don't use me as a <em>Parent "
-"Theme</em>. Instead try turning me into the next, most awesome, WordPress "
-"theme out there. That's what I'm here for."
+"House Bulma starter theme for MNPdev."
 msgstr ""
 
 #. Author of the plugin/theme
@@ -156,7 +151,7 @@ msgid "Automattic"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://automattic.com/"
+msgid "https://sonneksoller.com/"
 msgstr ""
 
 #: comments.php:40
