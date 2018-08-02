@@ -1,3 +1,5 @@
+# This theme is in development :)
+
 === Bulmatypic ===
 
 Author: Rachelle Sonnek Soller
@@ -32,6 +34,6 @@ Bulmatypic includes support for Infinite Scroll in Jetpack.
 
 == Credits ==
 
-* Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
+* Markup based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* CSS framework: Bulma https://bulma.io/, bulma-scss https://github.com/j1mc/bulma-scss, Copyright (c) 2018 Jeremy Thomas [MIT](https://opensource.org/licenses/MIT)
 * Gulp WP Toolkit https://github.com/craigsimps/gulp-wp-toolkit, (C) 2017 Craig Simpson, [MIT](https://opensource.org/licenses/MIT)
