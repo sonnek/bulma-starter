@@ -15,9 +15,9 @@ toolkit.extendConfig({
 		textdomain: pkg.name
 	},
 	js: {
-		'theme': [
-			'develop/vendor/a.js',
-			'develop/js/b.js'
+		'bulmatypic': [
+			// 'develop/vendor/a.js',
+			'develop/js/*.js'
 		],
 		'something-conditional': [
 			'develop/js/standalone.js'

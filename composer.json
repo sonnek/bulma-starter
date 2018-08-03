@@ -1,0 +1,17 @@
+{
+    "name": "sonneksoller/bulmatypic",
+    "description": "House Bulma starter theme for MNPdev",
+    "type": "project",
+    "license": "GPL2.0",
+    "authors": [
+        {
+            "name": "Rachelle Sonnek Soller",
+            "email": "rachelle@sonneksoller.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "vendor-dir": "develop/vendor/"
+    },
+    "require": {}
+}
