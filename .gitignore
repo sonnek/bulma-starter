@@ -6,3 +6,16 @@ yarn.lock
 
 # VS Code
 .vscode/*
+
+# Gulp WP Toolkit generated files
+/images/*
+/js/*
+/languages/*
+bulmatypic.pot
+style.css
+style.css.map
+*.html
+/screenshot.png
+
+# Composer
+vendor
