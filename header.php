@@ -44,61 +44,40 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-
-		<nav id="branding" class="navbar" role="navigation" aria-label="main navigation">
+		<nav id="site-navigation" class="navbar" role="navigation" aria-label="main navigation">
 			<div class="navbar-brand">
 				<a class="navbar-item" href="https://bulma.io">
 					<img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
 				</a>
 
-				<a role="button" class="navbar-burger" data-target="primary-menu" aria-label="menu" aria-expanded="false">
+				<a class="navbar-burger" aria-controls="primary-menu" aria-expanded="false">
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 				</a>
 			</div>
-			<div id="primary-menu" class="navbar-menu">
-				<ul class="navbar-start">
-					<li class="navbar-item"><a href="#">Item 1</a></li>
-					<li class="navbar-item"><a href="#">Item 2</a></li>
-					<li class="navbar-item has-dropdown is-hoverable">
-						Item 3
-						<ul class="navbar-dropdown">
-							<li class="navbar-item"><a href="#">Submenu Item 1</a></li>
-							<li class="navbar-item"><a href="#">Submenu Item 2</a></li>
-						</ul>
-					</li>
-				</ul>
-
-				<ul class="navbar-end">
-					<li class="navbar-item"><a href="#">End Item</a></li>
-				</ul>
+			<div id="primary-menu" class="navbar-menu menu">
+				<?php
+				wp_nav_menu( array(
+					'theme_location' => 'primary-menu',
+					'depth'          => 0,
+					'container'      => 'div id="navigation"',
+					'menu_class'     => 'navbar-start',
+					'fallback_cb'    => 'bulmapress_navwalker::fallback',
+					'walker'         => new Bulmatypic_Navwalker(),
+				));
+				wp_nav_menu( array(
+					'theme_location' => 'navbar-right',
+					'depth'          => 0,
+					'container'      => 'div id="navigation"',
+					'menu_class'     => 'navbar-end',
+					'fallback_cb'    => 'bulmapress_navwalker::fallback',
+					'walker'         => new Bulmatypic_Navwalker(),
+				));
+				?>
 			</div>
-		</nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'bulmatypic' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'primary-menu',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+
