@@ -123,7 +123,7 @@ add_action( 'widgets_init', 'bulmatypic_widgets_init' );
 function bulmatypic_scripts() {
 	wp_enqueue_style( 'bulmatypic-style', get_stylesheet_uri(), array(), '0.5.0' );
 
-	wp_enqueue_script( 'bulmatypic-scripts', get_template_directory_uri() . '/js/bulmatypic.js', array( 'jquery' ), '0.5.0', true );
+	wp_enqueue_script( 'bulmatypic-scripts', get_template_directory_uri() . '/js/bulmatypic.min.js', array( 'jquery' ), '0.5.0', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -135,6 +135,11 @@ add_action( 'wp_enqueue_scripts', 'bulmatypic_scripts' );
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/src/custom-header.php';
+
+/**
+ * Custom navwalker for Bulma CSS.
+ */
+require get_template_directory() . '/src/class-bulmatypic-navwalker.php';
 
 /**
  * Custom template tags for this theme.
