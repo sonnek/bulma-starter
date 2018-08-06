@@ -44,7 +44,8 @@ if ( ! function_exists( 'bulmatypic_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'bulmatypic' ),
+			'primary-menu' => esc_html__( 'Primary Menu', 'bulmatypic' ),
+			'navbar-right' => esc_html__( 'Navbar Right', 'bulmatypic' ),
 		) );
 
 		/*
@@ -149,6 +150,11 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Functions to echo site info.
+ */
+require get_template_directory() . '/inc/site-info.php';
 
 /**
  * Load Jetpack compatibility file.
