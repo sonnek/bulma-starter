@@ -57,24 +57,9 @@
 				</button>
 			</div>
 			<div id="primary-menu" class="navbar-menu menu">
-				<?php
-				wp_nav_menu( array(
-					'theme_location' => 'primary-menu',
-					'depth'          => 0,
-					'container'      => 'div id="navigation"',
-					'menu_class'     => 'navbar-start',
-					'fallback_cb'    => 'bulmapress_navwalker::fallback',
-					'walker'         => new Bulmatypic_Navwalker(),
-				));
-				wp_nav_menu( array(
-					'theme_location' => 'navbar-right',
-					'depth'          => 0,
-					'container'      => 'div id="navigation"',
-					'menu_class'     => 'navbar-end',
-					'fallback_cb'    => 'bulmapress_navwalker::fallback',
-					'walker'         => new Bulmatypic_Navwalker(),
-				));
-				?>
+				<ul>
+					<?php bulmatypic_navbar(); ?>	
+				</ul>
 			</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

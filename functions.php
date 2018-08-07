@@ -131,14 +131,19 @@ function bulmatypic_scripts() {
 add_action( 'wp_enqueue_scripts', 'bulmatypic_scripts' );
 
 /**
+ * Add Custom Navwalker Class.
+ */
+require get_template_directory() . '/src/class-bulmatypic-navwalker.php';
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/src/custom-header.php';
 
 /**
- * Add Custom Navwalker Class.
+ * Add Header helper functions.
  */
-require get_template_directory() . '/src/class-bulmatypic-navwalker.php';
+require get_template_directory() . '/src/header-functions.php';
 
 /**
  * Custom template tags for this theme.
