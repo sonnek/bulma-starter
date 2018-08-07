@@ -17,7 +17,7 @@
 		return;
 	}
 
-	menu = container.getElementsByTagName('ul')[0];
+	menu = container.getElementsByTagName('div')[1];
 
 	// Hide menu toggle button if menu is empty and return early.
 	if ('undefined' === typeof menu) {

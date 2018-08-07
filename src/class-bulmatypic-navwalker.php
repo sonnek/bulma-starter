@@ -25,7 +25,7 @@ class Bulmatypic_Navwalker extends Walker_Nav_Menu {
 	 *  @see Walker::start_lvl()
 	 *
 	 *  @param string   $output Used to append additional content (passed by reference).
-	 *  @param int      $depth  Depth of menu item. Used for padding.
+	 *  @param int      $depth  Depth of menu item.
 	 * @param stdClass $args   An object of wp_nav_menu() arguments.
 	 */
 	public function start_lvl( &$output, $depth = 0, $args = array() ) {
@@ -41,7 +41,7 @@ class Bulmatypic_Navwalker extends Walker_Nav_Menu {
 	 *
 	 * @param string   $output Used to append additional content (passed by reference).
 	 * @param WP_Post  $item   Menu item data object.
-	 * @param int      $depth  Depth of menu item. Used for padding.
+	 * @param int      $depth  Depth of menu item.
 	 * @param stdClass $args   An object of wp_nav_menu() arguments.
 	 * @param int      $id     Current item ID.
 	 */
@@ -54,7 +54,7 @@ class Bulmatypic_Navwalker extends Walker_Nav_Menu {
 
 		if ( $has_children ) :
 			$output .= "<span class='" . $li_classes . "'>";
-			$output .= "\n<li class='navbar-link'><a href='" . $item->url . "'>" . $item->title . '</a></li>';
+			$output .= "<li class='navbar-link'><a href='" . $item->url . "'>" . $item->title . '</a></li>';
 		else :
 			$output .= "<li class='" . $li_classes . "'><a href='" . $item->url . "'>" . $item->title . '</a></li>';
 		endif;
@@ -94,7 +94,7 @@ class Bulmatypic_Navwalker extends Walker_Nav_Menu {
 	 * @see Walker::end_lvl()
 	 *
 	 * @param string   $output Used to append additional content (passed by reference).
-	 * @param int      $depth  Depth of menu item. Used for padding.
+	 * @param int      $depth  Depth of menu item. 
 	 * @param stdClass $args   An object of wp_nav_menu() arguments.
 	 */
 	// public function end_lvl ( &$output, $depth = 0, $args = array() ) {
