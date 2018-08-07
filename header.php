@@ -50,13 +50,13 @@
 					<img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
 				</a>
 
-				<a class="navbar-burger" aria-controls="primary-menu" aria-expanded="false">
+				<button class="navbar-burger" aria-controls="primary-menu" aria-expanded="false">
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
-				</a>
+				</button>
 			</div>
-			<div id="primary-menu" class="navbar-menu menu">
+			<div id="primary-menu" class="navbar-menu menu" aria-expanded="false">
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'primary-menu',

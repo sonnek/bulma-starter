@@ -17,7 +17,7 @@
 		return;
 	}
 
-	menu = container.getElementsByTagName('ul')[0];
+	menu = container.getElementsByTagName('div')[1];
 
 	// Hide menu toggle button if menu is empty and return early.
 	if ('undefined' === typeof menu) {
@@ -31,6 +31,7 @@
 	}
 
 	button.onclick = function () {
+		console.log(container.getElementsByTagName('div')[0]);
 		if (-1 !== container.className.indexOf('toggled')) {
 			container.className = container.className.replace(' toggled', '');
 			button.setAttribute('aria-expanded', 'false');
