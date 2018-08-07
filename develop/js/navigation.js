@@ -31,12 +31,16 @@
 	}
 
 	button.onclick = function () {
-		if (-1 !== container.className.indexOf('toggled')) {
-			container.className = container.className.replace(' toggled', '');
+		if (-1 !== button.className.indexOf('is-active')) {
+			button.className = button.className.replace(' is-active', '');
+			menu.className = menu.className.replace(' is-active', '');
+
 			button.setAttribute('aria-expanded', 'false');
 			menu.setAttribute('aria-expanded', 'false');
 		} else {
-			container.className += ' toggled';
+			button.className += ' is-active';
+			menu.className += ' is-active';
+
 			button.setAttribute('aria-expanded', 'true');
 			menu.setAttribute('aria-expanded', 'true');
 		}
