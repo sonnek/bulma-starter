@@ -26,7 +26,7 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			
+
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="navbar" role="navigation" aria-label="main navigation">
