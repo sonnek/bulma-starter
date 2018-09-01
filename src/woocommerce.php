@@ -159,8 +159,8 @@ if ( ! function_exists( 'bulmatypic_woocommerce_wrapper_before' ) ) {
 	 */
 	function bulmatypic_woocommerce_wrapper_before() {
 		?>
-		<div id="primary" class="content-area">
-			<main id="main" class="site-main" role="main">
+		<div id="primary" class="column is-9">
+			<main id="main" role="main">
 			<?php
 	}
 }
@@ -175,7 +175,7 @@ if ( ! function_exists( 'bulmatypic_woocommerce_wrapper_after' ) ) {
 	 * @return void
 	 */
 	function bulmatypic_woocommerce_wrapper_after() {
-			?>
+		?>
 			</main><!-- #main -->
 		</div><!-- #primary -->
 		<?php
